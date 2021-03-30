@@ -1,0 +1,19 @@
+
+.header {
+  background-color: lightgray;
+  margin: 2rem 0;
+  border-bottom: 1px solid black;
+}
+
+.unorder {
+  display: flex;
+  justify-content: flex-end;
+}
+.list {
+  padding-right: 2rem;
+  
+}
+
+.list:hover {
+  cursor: pointer;
+}
