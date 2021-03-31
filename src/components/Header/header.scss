@@ -1,0 +1,22 @@
+@use '../../styles/vars';
+
+
+.header {
+  background-color: $backgroundColorHeader;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.unorder {
+  display: flex;
+  justify-content: flex-end;
+}
+.list {
+  margin-right: 2rem;
+  list-style-type: none;
+  border
+  &:hover {
+    cursor: pointer;
+    border-top: 2px solid orange;
+  }
+}
