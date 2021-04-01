@@ -17,7 +17,7 @@ const Header = () => {
     
     {
       name:'Formation', 
-      path: '/trainung'
+      path: '/training'
     },
 
     {
@@ -31,7 +31,7 @@ const Header = () => {
     
     return(<div className="header">
       <ul className="unorder">
-        {navBar.map((part) => (<li className="list" to={part.path}><Link>{part.name}</Link></li>))}
+        {navBar.map((part) => (<li className="list"><Link to={part.path}>{part.name}</Link></li>))}
       </ul>
     </div>
   );
