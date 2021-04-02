@@ -8,6 +8,11 @@ const Header = () => {
 
     
   return(<div className="header">
+    <div className="burger-menu">
+      <div className="bar"></div>
+      <div className="bar"></div>
+      <div className="bar"></div>
+    </div>
     <ul className="unorder">
       {console.log(headerNav)}
       {headerNav.map((part) => (
