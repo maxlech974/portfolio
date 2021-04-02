@@ -1,4 +1,4 @@
-@import '../../styles/vars';
+@import 'src/styles/vars';
 
 
 .header {
@@ -6,20 +6,29 @@
   margin: 0;
   padding: 30px 0;
   border-bottom: 1px solid black;
-}
 
-.unorder {
-  margin: 0px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.list {
-  margin-right: 2rem;
-  list-style-type: none;
-  border-top: 4px solid $backgroundColorHeader;
-  &:hover {
-    cursor: pointer;
-    border-top: 4px solid orange;
+  .unorder {
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+ 
+    .list {
+      margin-right: 2rem;
+      list-style-type: none;
+      border-top: 4px solid $backgroundColorHeader;
+    
+      .selected {
+        border-top: 4px solid orange;
+      }
+    
+      &:hover {
+        cursor: pointer;
+        border-top: 4px solid orange;
+      }
+    }
   }
 }
+
+
+
+
