@@ -1,17 +1,28 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './header.scss';
+
+import headerNav from 'src/Data/headerNav';
 
 const Header = () => {
 
-  const navBar = [ 'Accueil', 'Mon Profil', 'Formation', 'Expérience']
-  console.log(navBar);
-
     
-    return(<div className="header">
-      <ul className="unorder">
-        {navBar.map((part) => (<li className="list">{part}</li>))}
-      </ul>
-    </div>
+  return(<div className="header">
+    <ul className="unorder">
+      {console.log(headerNav)}
+      {headerNav.map((part) => (
+        <li className="list">
+          <NavLink 
+            to={part.path} 
+            activeClassName="selected" 
+            exact
+          >
+            {part.name}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  </div>
   );
 }
 
