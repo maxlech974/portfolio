@@ -8,6 +8,7 @@ import Home from 'src/components/Home';
 import MyProfile from 'src/components/MyProfile';
 import Training from 'src/components/Training';
 import Experiences from 'src/components/Experiences';
+import Contact from 'src/components/Contact';
 
 
 const Main = () => (
@@ -24,6 +25,9 @@ const Main = () => (
       </Route>
       <Route path="/experiences">
         <Experiences />
+      </Route>
+      <Route path="/contact">
+        <Contact />
       </Route>
     </Switch>
   </div>

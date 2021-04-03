@@ -17,7 +17,11 @@ const headerNav =  [
   {
     name:'Expériences', 
     path: '/experiences'
-  }
+  },
+  {
+    name:'contact',
+    path:'/contact'
+  },
 ];
 
 export default headerNav;
