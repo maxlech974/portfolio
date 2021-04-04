@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
-const rootReducer = combineReducers({
+import externalComponentsReducer from './extComponents';
 
+const rootReducer = combineReducers({
+  extComponents: externalComponentsReducer,
 });
 
 export default rootReducer;

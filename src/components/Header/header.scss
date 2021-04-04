@@ -17,7 +17,7 @@
       list-style-type: none;
       
       .selected {
-        background: linear-gradient(to right, #E80A89, #F15B2B);
+        background: $activeButton;
       }
       
       a {
