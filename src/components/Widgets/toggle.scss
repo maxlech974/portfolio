@@ -1,0 +1,31 @@
+.toggle-bar {
+  width: 6rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  height: 3rem;
+  background-color: grey;
+
+  .toggle-icon {
+    width: 3rem;
+    border: 1px solid black;
+    height: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0rem rgba(0,0,0, 0.3);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      color: black;
+    }
+    
+    &.active{
+      transform: translate(3rem);
+      transition: 1s;
+      
+    }
+    
+  }
+  
+}
