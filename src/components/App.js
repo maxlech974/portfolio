@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-//import de composants
+//  import de composants
 import Header from 'src/containers/Header';
 import Main from 'src/components/Main';
 
-//DarkTheme
-import { ThemeProvider } from  'styled-components';
+//  DarkTheme
+import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from 'src/styles/global';
 
 import 'src/styles/reset.css';
@@ -16,7 +16,6 @@ import './app.scss';
 import { lightTheme, darkTheme } from 'src/styles/theme';
 
 function App({ theme }) {
-
   return (
     <div className="App">
       <Router>

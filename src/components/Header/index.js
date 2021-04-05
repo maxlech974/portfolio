@@ -2,24 +2,23 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.scss';
 
-//data
+//  data
 import headerNav from 'src/Data/headerNav';
 
-//sous composant
+//  sous composant
 import BurgerMenu from 'src/components/Header/BurgerMenu';
 import ToggleTheme from 'src/containers/Widgets/ToggleTheme';
 
-const Header = () => {
-
-  return(<div className="header">
+const Header = () => (
+  <div className="header">
     <BurgerMenu />
     <ul id="unorder">
       <ToggleTheme />
       {headerNav.map((part) => (
         <li className="list">
-          <NavLink 
-            to={part.path} 
-            activeClassName="selected" 
+          <NavLink
+            to={part.path}
+            activeClassName="selected"
             exact
           >
             {part.name}
@@ -28,7 +27,6 @@ const Header = () => {
       ))}
     </ul>
   </div>
-  );
-}
+);
 
 export default Header;
