@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun, Moon} from 'react-feather';
+import { Moon} from 'react-feather';
 
 import './toggle.scss';
 
@@ -24,8 +24,7 @@ const ToggleTheme = ({ theme, setTheme }) => {
     <div className="toggle-theme">
       <div className="toggle-bar" onClick={toggle}>
         <div className={(theme === 'light') ? "toggle-icon" : "toggle-icon active" }>
-          {(theme === 'light') && (<Sun className="icon" />)}
-          {(theme === 'dark') && (<Moon className="icon" />)}
+          <Moon className="icon" />
         </div>
       </div>
     </div>
