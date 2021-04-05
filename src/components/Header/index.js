@@ -7,14 +7,14 @@ import headerNav from 'src/Data/headerNav';
 
 //sous composant
 import BurgerMenu from 'src/components/Header/BurgerMenu';
+import ToggleTheme from 'src/containers/Widgets/ToggleTheme';
 
 const Header = () => {
 
-    
   return(<div className="header">
     <BurgerMenu />
     <ul id="unorder">
-      {console.log(headerNav)}
+      <ToggleTheme />
       {headerNav.map((part) => (
         <li className="list">
           <NavLink 

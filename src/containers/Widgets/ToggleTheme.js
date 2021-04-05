@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import App from 'src/components/App';
+import ToggleTheme from 'src/components/Widgets/ToggleTheme';
 
 import { toggleTheme } from 'src/actions/extComponents';
 
@@ -9,6 +9,9 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
+  setTheme: (value) => {
+    dispatch(toggleTheme(value));
+  }
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(ToggleTheme);

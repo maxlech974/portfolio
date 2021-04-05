@@ -1,7 +1,7 @@
 import { TOGGLE_THEME } from 'src/actions/extComponents';
 
 const initialState = {
-  theme: 'light',
+  theme: localStorage.getItem('theme') ?? 'light',
 };
 
 const extComponents = (state = initialState, action = {}) => {
@@ -9,7 +9,7 @@ const extComponents = (state = initialState, action = {}) => {
     case TOGGLE_THEME:
       return {
         ...state,
-        theme: action.value
+        theme: action.value,
       };
       default: return { ...state };
   }
