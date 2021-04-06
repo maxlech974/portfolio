@@ -1,10 +1,11 @@
 import React from 'react';
-import { Moon} from 'react-feather';
+import { Moon } from 'react-feather';
 
 import './toggle.scss';
 
 const ToggleTheme = ({ theme, setTheme }) => {
   const toggle = () => {
+    console.log('je suis le theme')
     if (theme === 'light') {
       localStorage.setItem('theme', 'dark');
       setTheme('dark');
@@ -24,7 +25,6 @@ const ToggleTheme = ({ theme, setTheme }) => {
         </div>
       </div>
     </div>
-
   );
 };
 

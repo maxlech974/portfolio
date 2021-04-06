@@ -12,7 +12,7 @@ import { GlobalStyles } from 'src/styles/global';
 import 'src/styles/reset.css';
 import './app.scss';
 
-// import des thèmes pour le toggle
+//  import des thèmes pour le toggle
 import { lightTheme, darkTheme } from 'src/styles/theme';
 
 function App({ theme }) {
