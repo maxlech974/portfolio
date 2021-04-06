@@ -6,7 +6,7 @@ const BurgerMenu = () => {
   let open = false;
 
   const toggleMenu = () => {
-    const unorder = document.getElementById('unorder');
+    const unorder = document.querySelector('.menu-box');
 
     if (open === false) {
       unorder.setAttribute('style', 'display: block;');

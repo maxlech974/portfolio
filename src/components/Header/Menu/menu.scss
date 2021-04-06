@@ -1,35 +1,47 @@
 @import 'src/styles/vars';
 
-#unorder {
-  margin: 0px;
-  display: none;
-  justify-content: flex-end;
-  
-  .list {
-    
-    list-style-type: none;
-    
-    .selected {
-      background: $activeButton;
-    }
-    
-    a {
-      text-decoration: none;
-      color: white;
-      width: 100%;
-      padding: 0.5rem;
-      border-radius: 3px;
+.menu-box{
 
-      &:hover {
-        cursor: pointer;
-        background-color: orange;
-        transition: 0.7s;
+  display: none;
+
+  .unorder {
+    margin: 2rem 1rem;
+    justify-content: flex-end;
+    text-align:  right;
+    
+    .list {
+
+      .selected {
+        background: $activeButton;
       }
+      .link {
+        display: block;
+        text-decoration: none;
+        background-color: #5A5A5A;
+        color: white;
+        width: 200px !important;
+        height: 50px;
+        margin: 1rem 0;
+        border-radius: 3px;
+        padding: 1rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: orange;
+          transition: 0.7s;
+        }
+        
+      }
+      
+        
+  
+        
+      
+      
+      
     }
-    
-    
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
+    /* @media screen and (min-width: 768px) {
+      display: flex;
+    } */
   }
 }

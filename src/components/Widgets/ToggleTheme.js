@@ -5,7 +5,6 @@ import './toggle.scss';
 
 const ToggleTheme = ({ theme, setTheme }) => {
   const toggle = () => {
-    console.log('je suis le theme')
     if (theme === 'light') {
       localStorage.setItem('theme', 'dark');
       setTheme('dark');
@@ -19,6 +18,7 @@ const ToggleTheme = ({ theme, setTheme }) => {
   return (
 
     <div className="toggle-theme">
+      <h1>Theme Sombre</h1>
       <div className="toggle-bar" onClick={toggle}>
         <div className={(theme === 'light') ? 'toggle-icon' : 'toggle-icon active' }>
           <Moon className="icon" />
