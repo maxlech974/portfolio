@@ -6,8 +6,11 @@
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 3rem;
 
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
 
   .bar{
     width: 100%;

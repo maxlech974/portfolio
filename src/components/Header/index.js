@@ -11,7 +11,7 @@ const Header = () => {
   return (
   <div className="header">
     <div className="right-part">
-      <BurgerMenu />
+      <BurgerMenu className="burger-fixed" />
       <Menu />
     </div>
   </div>

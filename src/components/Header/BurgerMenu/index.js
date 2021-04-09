@@ -18,11 +18,11 @@ const BurgerMenu = () => {
   };
   return (
     <div className="burger-menu" onClick={toggleMenu}>
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
+      <div className="bar" />
+      <div className="bar" />
+      <div className="bar" />
     </div>
   );
 };
 
-export default BurgerMenu
+export default BurgerMenu;

@@ -1,4 +1,4 @@
-{
+/* {
   "extends": ["airbnb", "airbnb/hooks"],
   "parserOptions": {
     "ecmaFeatures": {
@@ -35,4 +35,4 @@
       }
     }
   }
-}
+} */
