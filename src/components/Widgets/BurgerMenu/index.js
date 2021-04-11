@@ -2,7 +2,7 @@ import React from 'react';
 
 import './burger.scss';
 
-const BurgerMenu = () => {
+const BurgerMenu = ({menu, setMenu}) => {
   let open = false;
 
   const toggleMenu = () => {
@@ -10,9 +10,11 @@ const BurgerMenu = () => {
 
     if (open === false) {
       unorder.setAttribute('style', 'display: block;');
+      setMenu('menu-box active');
     }
     else {
       unorder.setAttribute('style', '');
+      setMenu('menu-box');
     }
     open = !open;
   };

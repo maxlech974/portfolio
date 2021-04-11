@@ -1,3 +1,5 @@
+@import 'src/styles/vars.scss';
+
 .burger-menu{
   height: 3rem;
   width: 3rem;
@@ -9,8 +11,8 @@
   margin: 3rem;
 
   position: absolute;
-  top: 2rem;
-  left: 3rem;
+  top: $gutter;
+  right: $gutter;
 
   .bar{
     width: 100%;

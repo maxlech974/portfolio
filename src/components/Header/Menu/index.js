@@ -7,8 +7,8 @@ import headerNav from 'src/Data/headerNav';
 
 import './menu.scss';
 
-const Menu = () => (
-  <div className="menu-box">
+const Menu = ({menu}) => (
+  <div className={menu}>
     <ToggleTheme />
     <ul className="unorder">
       {headerNav.map((part) => (

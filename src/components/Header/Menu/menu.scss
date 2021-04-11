@@ -1,8 +1,17 @@
 @import 'src/styles/vars';
 
 .menu-box{
-
+  margin-top: 16*$gutter;
   display: none;
+  position: fixed;
+  top: 0px;
+  right: -20rem;
+  height: 100vh;
+
+  &.active {
+    transform: translate(-20rem);
+    transition-duration: 1s;
+  }
 
   .unorder {
     margin: 2rem 1rem;
