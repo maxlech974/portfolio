@@ -2,21 +2,22 @@ import React from 'react';
 
 import './burger.scss';
 
-const BurgerMenu = ({menu, setMenu}) => {
-  let open = false;
-
+const BurgerMenu = ({menuClass, setMenuClass}) => {
+  
+let open = (menuClass);
   const toggleMenu = () => {
     const unorder = document.querySelector('.menu-box');
-
+    console.log(open);
     if (open === false) {
       unorder.setAttribute('style', 'display: block;');
-      setMenu('menu-box active');
+      setMenuClass('active');
+      open = true;
     }
     else {
       unorder.setAttribute('style', '');
-      setMenu('menu-box');
+      setMenuClass('');
+      open = false;
     }
-    open = !open;
   };
   return (
     <div className="burger-menu" onClick={toggleMenu}>
