@@ -8,7 +8,7 @@ import Menu from 'src/components/Header/Menu';
 
 const Header = () => {
   
-  const [menuClass, setMenuClass] = useState('');
+  const [menuClass, setMenuClass] = useState(false);
  
   return (
   <div className="header">

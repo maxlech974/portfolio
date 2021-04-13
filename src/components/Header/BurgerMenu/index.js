@@ -4,20 +4,9 @@ import './burger.scss';
 
 const BurgerMenu = ({menuClass, setMenuClass}) => {
   
-let open = (menuClass);
+  let open = false;
   const toggleMenu = () => {
-    const unorder = document.querySelector('.menu-box');
-    console.log(open);
-    if (open === false) {
-      unorder.setAttribute('style', 'display: block;');
-      setMenuClass('active');
-      open = true;
-    }
-    else {
-      unorder.setAttribute('style', '');
-      setMenuClass('');
-      open = false;
-    }
+  setMenuClass(!menuClass);
   };
   return (
     <div className="burger-menu" onClick={toggleMenu}>

@@ -2,11 +2,11 @@
 
 .menu-box{
   margin-top: 16*$gutter;
-  display: none;
   position: fixed;
   top: 0px;
   right: -20rem;
   height: 100vh;
+  background-color: $backgroundColorHeader;
 
   &.active {
     transform: translate(-20rem);
