@@ -10,12 +10,12 @@
   justify-content: flex-end;
   height: 150px;
 
-  .right-part{
-    flex-direction: column;
-    display: flex;
-    align-items: flex-end;
-  }
+  @media (min-width: 768px) {
+    .right-part{
+      display: inline;
 
+    }
+  }
 
 }
 

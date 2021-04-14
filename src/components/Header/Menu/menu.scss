@@ -1,56 +1,72 @@
 @import 'src/styles/vars';
 
 .menu-box{
-  margin-top: 16*$gutter;
-  position: fixed;
-  top: 0px;
-  right: -20rem;
-  height: 100vh;
-  background-color: $backgroundColorHeader;
 
-  &.active {
-    transform: translate(-20rem);
-    transition-duration: 1s;
+  @media (max-width: 768px) {
+
+    margin-top: 16*$gutter;
+    position: fixed;
+    top: 0px;
+    right: -20rem;
+    height: 100vh;
+    background-color: $backgroundColorHeader;
+  
+    &.active {
+      transform: translate(-20rem);
+      transition-duration: 1s;
+    }
+
+    .unorder{
+      .list{
+        .link{
+          display: block;
+          text-align: center;
+          width: 200px !important;
+        }
+      }
+    }
   }
 
+  
   .unorder {
     margin: 2rem 1rem;
-    justify-content: flex-end;
     text-align:  right;
     
     .list {
-
+      
       .selected {
         background: $activeButton;
       }
       .link {
-        display: block;
+        display: inline-block;
         text-decoration: none;
         background-color: #5A5A5A;
         color: white;
-        width: 200px !important;
         height: 50px;
         margin: 1rem 0;
         border-radius: 3px;
         padding: 1rem;
-
+        
         &:hover {
           cursor: pointer;
           background-color: orange;
           transition: 0.7s;
         }
         
-      }
-      
-        
-  
-        
-      
-      
-      
+      }   
     }
-    /* @media screen and (min-width: 768px) {
-      display: flex;
-    } */
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    .list{
+      display: inline;
+      margin-right: 4*$gutter;
+      :last-child{
+        margin-right: $gutter im !important;
+      }
+      .link {
+        
+      }
+    }
   }
 }
