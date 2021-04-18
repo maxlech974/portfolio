@@ -9,6 +9,7 @@ import MyProfile from 'src/components/MyProfile';
 import Training from 'src/components/Training';
 import Experiences from 'src/components/Experiences';
 import Contact from 'src/components/Contact';
+import NoMatch from 'src/components/NoMatch';
 
 
 const Main = () => (
@@ -28,6 +29,9 @@ const Main = () => (
       </Route>
       <Route path="/contact">
         <Contact />
+      </Route>
+      <Route>
+        <NoMatch />
       </Route>
     </Switch>
   </div>
